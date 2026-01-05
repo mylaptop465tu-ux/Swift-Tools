@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Swift Tools | All-in-One Online Tools</title>
 
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
@@ -28,16 +27,13 @@
     body {
       background: var(--bg);
       color: var(--text-dark);
-      line-height: 1.6;
     }
 
-    /* Header */
     header {
       background: #fff;
       border-bottom: 1px solid #e5e7eb;
       position: sticky;
       top: 0;
-      z-index: 100;
     }
 
     .nav {
@@ -45,8 +41,8 @@
       margin: auto;
       padding: 16px;
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
     }
 
     .logo {
@@ -66,11 +62,10 @@
       color: var(--blue);
     }
 
-    /* Hero */
     .hero {
       max-width: 1200px;
       margin: auto;
-      padding: 60px 16px 40px;
+      padding: 60px 16px;
       text-align: center;
     }
 
@@ -81,12 +76,6 @@
 
     .hero p {
       color: var(--text-light);
-      max-width: 700px;
-      margin: auto;
-    }
-
-    .cta {
-      margin-top: 24px;
     }
 
     .btn {
@@ -97,42 +86,26 @@
       text-decoration: none;
       font-weight: 600;
       display: inline-block;
+      margin-top: 20px;
     }
 
-    .btn:hover {
-      background: #1d4ed8;
-    }
-
-    /* Search */
     .search-box {
       max-width: 600px;
-      margin: 30px auto 50px;
+      margin: 30px auto;
       padding: 0 16px;
     }
 
     .search-box input {
       width: 100%;
-      padding: 14px 16px;
+      padding: 14px;
       border-radius: 10px;
       border: 1px solid #d1d5db;
-      font-size: 16px;
     }
 
-    /* Sections */
     section {
       max-width: 1200px;
       margin: auto;
       padding: 40px 16px;
-    }
-
-    section h2 {
-      font-size: 24px;
-      margin-bottom: 6px;
-    }
-
-    section p {
-      color: var(--text-light);
-      margin-bottom: 24px;
     }
 
     .grid {
@@ -143,34 +116,11 @@
 
     .card {
       background: var(--card);
-      border-radius: 14px;
       padding: 20px;
+      border-radius: 14px;
       box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
-    .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 15px 30px rgba(0,0,0,0.08);
-    }
-
-    .card h3 {
-      font-size: 16px;
-      margin-bottom: 6px;
-    }
-
-    .card p {
-      font-size: 14px;
-      margin-bottom: 14px;
-    }
-
-    .card a {
-      color: var(--blue);
-      font-weight: 600;
-      text-decoration: none;
-    }
-
-    /* Footer */
     footer {
       background: #0f172a;
       color: #cbd5f5;
@@ -178,101 +128,74 @@
       margin-top: 60px;
     }
 
-    .footer-content {
-      max-width: 1200px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-
     footer h3 {
       color: #fff;
-      margin-bottom: 10px;
     }
 
     footer a {
       color: #cbd5f5;
       text-decoration: none;
       display: block;
-      margin-bottom: 6px;
-    }
-
-    footer a:hover {
-      color: #fff;
+      margin-top: 6px;
     }
 
     .copyright {
       text-align: center;
-      margin-top: 30px;
+      margin-top: 20px;
       font-size: 14px;
-      color: #94a3b8;
     }
   </style>
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <div class="nav">
-      <div class="logo">Tools Wonder</div>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">Tools</a>
-        <a href="mailto:toolswonder1@gmail.com">Contact</a>
-      </nav>
-    </div>
-  </header>
+<header>
+  <div class="nav">
+    <div class="logo">Swift Tools</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Tools</a>
+      <a href="mailto:toolswonder1@gmail.com">Contact</a>
+    </nav>
+  </div>
+</header>
 
-  <!-- Hero -->
-  <div class="hero">
-    <h1>Your Daily Tools, All in One Place</h1>
-    <p>Convert, calculate, compress, and simplify your everyday tasks — fast and free.</p>
-    <div class="cta">
-      <a href="#tools" class="btn">Explore Tools</a>
+<div class="hero">
+  <h1>Your Daily Tools, All in One Place</h1>
+  <p>Convert, calculate, compress, and simplify your everyday tasks — fast and free.</p>
+  <a href="#tools" class="btn">Explore Tools</a>
+</div>
+
+<div class="search-box">
+  <input type="text" placeholder="Search a tool…" />
+</div>
+
+<section id="tools">
+  <h2>🖼 Image Tools</h2>
+  <div class="grid">
+    <div class="card">Image Converter</div>
+    <div class="card">Image Compressor</div>
+    <div class="card">Image Resizer</div>
+    <div class="card">Image Cropper</div>
+    <div class="card">Image to Text</div>
+    <div class="card">Image Rotator</div>
+  </div>
+</section>
+
+<footer>
+  <div class="nav">
+    <div>
+      <h3>Swift Tools</h3>
+      <p>Simplifying your digital life.</p>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <a href="mailto:toolswonder1@gmail.com">toolswonder1@gmail.com</a>
     </div>
   </div>
-
-  <!-- Search -->
-  <div class="search-box">
-    <input type="text" placeholder="Search a tool…" />
+  <div class="copyright">
+    © 2026 Swift Tools. All rights reserved.
   </div>
-
-  <!-- Example Section (repeat pattern for all categories) -->
-  <section id="tools">
-    <h2>🖼 Image Tools</h2>
-    <p>Edit, convert, and optimize images instantly.</p>
-    <div class="grid">
-      <div class="card"><h3>Image Converter</h3><p>Convert images between formats.</p><a href="#">Use Tool</a></div>
-      <div class="card"><h3>Image Compressor</h3><p>Reduce image size without quality loss.</p><a href="#">Use Tool</a></div>
-      <div class="card"><h3>Image Resizer</h3><p>Resize images to any dimension.</p><a href="#">Use Tool</a></div>
-      <div class="card"><h3>Image Cropper</h3><p>Crop images quickly online.</p><a href="#">Use Tool</a></div>
-      <div class="card"><h3>Image to Text</h3><p>Extract text using OCR.</p><a href="#">Use Tool</a></div>
-      <div class="card"><h3>Image Rotator</h3><p>Rotate or flip images.</p><a href="#">Use Tool</a></div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="footer-content">
-      <div>
-        <h3>Tools Wonder</h3>
-        <p>Simplifying your digital life.</p>
-      </div>
-      <div>
-        <h3>Contact</h3>
-        <a href="mailto:toolswonder1@gmail.com">toolswonder1@gmail.com</a>
-      </div>
-      <div>
-        <h3>Quick Links</h3>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Use</a>
-      </div>
-    </div>
-    <div class="copyright">
-      © 2026 Swift Tools. All rights reserved.
-    </div>
-  </footer>
+</footer>
 
 </body>
 </html>
